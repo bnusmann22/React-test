@@ -1,0 +1,82 @@
+.wrapper {
+  max-width: 280px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  --price-theme: #f3847e;
+  --price-theme-darker: #d43533;
+
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 5px 10px#8888;
+}
+
+.card__label {
+  color: black;
+  font-weight: 800;
+  font-size: 1.4rem;
+}
+
+.card__img {
+  max-width: 120px;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.card__priceLabel {
+  margin-top: 20px;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 800;
+  color: var(--price-theme-darker);
+  width: 100%;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #c5b8b8;
+}
+
+.duration {
+  opacity: 0.7;
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+
+.card__benefits-label {
+  color: var(--price-theme);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 20px;
+  letter-spacing: 1.5px;
+}
+
+.card__benefits {
+  color: black;
+  padding-left: 20px;
+  font-size: 0.7rem;
+}
+
+.card__benefit {
+  margin-bottom: 15px;
+}
+
+/* .card__benefit-icon {
+  width: 12px;
+  height: 12px;
+  background-color: color-mix(in srgb, var(--price-theme), white 40%);
+  padding: 2px;
+  border-radius: 50%;
+  margin-right: 6px;
+} */
+
+.card__button {
+  text-transform: uppercase;
+  padding: 15px;
+  background-color: var(--price-theme);
+  width: 100%;
+  text-align: center;
+  border: 2px solid var(--price-theme-darker);
+  border-radius: 3px;
+  margin-top: 20px;
+}
