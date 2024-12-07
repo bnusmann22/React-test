@@ -36,6 +36,8 @@ export default function PricingCard({
   duration,
   // eslint-disable-next-line react/prop-types
   priceLabel,
+
+  benefits,
 }) {
   return (
     <div className={Styles.wrapper}>
@@ -52,9 +54,13 @@ export default function PricingCard({
           Everything in Free,Plus
         </span>
         <ul className={Styles.card__benefits}>
-          <li className={Styles.card__benefit}>Upto 10 users</li>
-          <li className={Styles.card__benefit}>Email Support, Call Support</li>
-          <li className={Styles.card__benefit}>1 Year Access</li>
+          {benefits.map((benefit) => {
+            return (
+              <li className={Styles.card__benefit} key={benefit}>
+                {benefit}
+              </li>
+            );
+          })}
         </ul>
 
         <button className={Styles.card__button}>Choose</button>

@@ -1,4 +1,4 @@
-export default [
+const data = [
   {
     label: "Free",
     image: "../src/assets/bicycle.svg",
@@ -21,3 +21,6 @@ export default [
     imageAlt: "Moving plane With Clouds",
   },
 ];
+
+const newData = data.map((data) => `<h2> ${data.label}</h2>`);
+newData;
